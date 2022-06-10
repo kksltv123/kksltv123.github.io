@@ -1,0 +1,405 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+body {
+    font-family: 'NanumSquare', Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --main-color: #3f6acc;
+    --sub_color1: #e3dbca;
+    --sub_color2: #F4F0F1;
+}
+
+/* 헤더 */
+header { width: 100%;  position: relative; }
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 99;
+}
+.nav {
+    width: 750px;
+    margin: 0 auto;
+    z-index: 99;
+}
+.nav::after { display: block; clear: both; content: ""; }
+.nav > li {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 66px;
+    margin-right: 70px;
+}
+.nav > li > a {
+    display: block;
+    color: #333333;
+}
+.nav > li > a:hover { color: var(--main-color); }
+.nav > li:last-child { margin-right: 0; }
+.btn-allmenu {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-image: url('../images/hamberger.png');
+    width: 40px;
+    height: 27px;
+    border: none;
+    z-index: 99;
+    cursor: pointer;
+}
+.btn-allmenu > span { display: none; }
+.submenu_bg {
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    left: 0;
+    top: 66px;
+    z-index: 110;
+    background-color: var(--main-color);
+    display: none;
+}
+.submenu {
+    width: 750px;
+    display: none;
+    margin: 0 auto;
+}
+.submenu::after { display: block; clear: both; content: ""; }
+.submenu > li {
+    float: left;
+    line-height: 50px;
+    margin-right: 20px;
+    position: relative;
+}
+.submenu > li::after {
+    display: inline-block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    margin-right: -10px;
+    box-sizing: border-box;
+}
+.submenu > li > a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all .3s ease-out;
+}
+.submenu > li > a:hover::after {
+    width: 100%;
+}
+.submenu > li > a {
+    color: #ffffff;
+    display: block;
+    position: relative;
+}
+
+.local-nav_bg {
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/localnav.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.local_wrap {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.local-title {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+.location {
+    color: #ffffff;
+    text-align: center;
+    line-height: 70px;
+}
+.local-nav {
+    text-align: center;
+}
+.local-nav > li {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    line-height: 40px;
+    margin: 5px;
+}
+.local-nav > li.active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.local-nav > li.active > a { color: #333333; }
+.local-nav > li > a {
+    display: block;
+    color: #ffffff;
+}
+
+/* 인사말, 바로가기 */
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.greeting { margin-top: 208px; }
+.greeting::after { display: block; clear: both; content: ""; }
+.greeting_info {
+    width: 450px;
+    float: left;
+}
+.greeting_info > h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+.greeting_info > h2 > span {
+    font-size: 25px;
+    margin-right: 5px;
+}
+.greeting_info > h2 {
+    font-size: 30px;
+    margin-top: 33px;
+}
+.greeting_info > dl {
+    margin-top: 50px;
+    font-size: 20px;
+}
+.greeting_info > dl > dt { margin-bottom: 16px; }
+.greeting_info > dl > dd { line-height: 30px; }
+.greeting_img {
+    float: right;
+}
+#greeting_title {
+    text-align: center;
+    width: 100%;
+    line-height: 144px;
+    font-size: 40px;
+    font-weight: bold;
+}
+#greeting_msg {
+    width: 1200px;
+    background-color: var(--sub_color2);
+}
+#msg_wrap {
+    width: 947px;
+    margin-left: 74px;
+}
+#msg_wrap > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 90px;
+}
+#msg_wrap > p {
+    font-size: 20px;
+    margin-bottom: 37px;
+    line-height: 25px;
+}
+#msg_wrap > h3 {
+    text-align: end;
+    font-size: 20px;
+    line-height: 50px;
+}
+#msg_wrap > h3 > span {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.contents-box { margin-top: 100px; margin-bottom: 100px; }
+.contents-box::after { display: block; content: ""; clear: both; }
+.contents-box > li {
+    float: left;
+    margin-right: 20px;
+}
+.contents-box > li > a {
+    width: 282px;
+    display: block;
+    overflow: hidden;
+}
+.contents-box > li > a > img { display: block; }
+.contents-box > li > a > img:hover {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.contents-box > li:last-child { margin-right: 0; }
+.contents-box > li > a > span {
+    width: 285px;
+    background-color: #858585;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 57px;
+    margin-top: 20px;
+    display: inline-block;
+}
+/* 모달 레이어 */
+.modal-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 990;
+    display: none;
+}
+.modal-up {
+    width: 1200px;
+    height: 550px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.modal-up::after { display: block; clear: both; content: ""; }
+.title-bar {
+    float: left;
+    background-color: var(--sub_color1);
+    height: 100%;
+    width: 200px;
+    text-align: center;
+    line-height: 550px;
+}
+.menu-wrap {
+    float: right;
+    width: 1000px;
+    height: 100%;
+    position: relative;
+}
+.modal-menu {
+    width: 800px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.modal-menu::after { display: block; clear: both; content: ""; }
+.modal-menu > li {
+    width: 100%;
+    float: left;
+    line-height: 50px;
+    border-top: 1px #cdcdcd dotted;
+}
+.modal-menu > li:first-child { border-top: none; }
+.modal-menu > li > h3 {
+    display: inline-block;
+    font-size: 18px;
+    color: var(--main-color);
+    position: relative;
+    font-weight: bold;
+}
+.modal-menu > li > h3::after {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 130px;
+    width: 45px;
+    height: 1px;
+    content: '';
+    background: var(--main-color);
+}
+.modal-menu > li > ul {
+    float: right;
+    width: 600px;
+}
+.modal-menu > li > ul > li {
+    float: left;
+    line-height: 50px;
+    margin-right: 40px;
+}
+.modal-menu > li > ul > li > a {
+    font-size: 15px;
+    color: #333333;
+    position: relative;
+}
+.modal-menu > li > ul > li > a:not(.last)::after {
+    display: inline-block;
+    content: '·';
+    position: absolute;
+    right: 0px;
+    margin-right: -20px;
+    vertical-align: 2px;
+    box-sizing: border-box;
+}
+.btnClose {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: transparent;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.btnClose > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 32px;
+    height: 2px;
+    margin: -2px 0 0 -16px;
+    background: #404040;
+}
+.btnClose > .line1 {
+    transform: rotate(45deg);
+}
+.btnClose > .line2 {
+    transform: rotate(-45deg);
+}
+
+/* 푸터 */
+footer {
+    margin-top: 300px;
+    width: 100%;
+    text-align: center;
+    background: var(--sub_color1);
+}
+.bottom_util {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ffffff;
+    padding: 20px 0 20px 0;
+}
+.bottom_util > li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+.bottom_util > li > a {
+    color: #6f6f6f;
+    font-size: 13px;
+}
+.bt_logo {
+    width: 100%;
+}
+.bt_logo > h2 {
+    padding: 30px 0 30px 0;
+}
+.copy {
+    width: 100%;
+}
+.copy_info {
+    margin: 0 auto;
+    font-size: 13px;
+    color: #6f6f6f;
+    width: 670px;
+    line-height: 20px;
+    padding-top: 30px;
+}
+
+
+
+
