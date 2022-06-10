@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순천시청</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="css/style_sub.css">
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/script_sub.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top-wrap">
+            <ul class="top-link">
+                <li class="active"><a href="#">순천시청</a></li>
+                <li><a href="#">순천의회</a></li>
+                <li><a href="#">순천여행</a></li>
+                <li><a href="#">바로예약</a></li>
+                <li><a href="#">패밀리사이트</a></li>
+                <li><a href="#">순천e민주정원</a></li>
+            </ul>
+            <ul class="top-utill">
+                <li><a href="#"><img src="images/utility1.png" alt="태극기"></a></li>
+                <li><a href="#">SNS</a></li>
+                <li><a href="#">로그인</a></li>
+                <li>
+                    <select class="laguage">
+                        <option>English</option>
+                        <option>日本語</option>
+                        <option>简体中文</option>
+                        <option>繁體中文</option>
+                    </select>
+                    <button type="button" class="language_go">GO</button>
+                </li>
+            </ul>
+        </div>
+        <div class="middle-wrap">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="로고"></a>
+            </div>
+            <form class="search-box">
+                <input type="text" class="search" name="search" title="검색">
+                <button class="search-button"><span>검색</span></button>
+            </form>
+            <ul class="weather">
+                <li><a href="#">초미세먼지(보통)</a></li>
+                <li><a href="#">날씨: 화창</a></li>
+            </ul>
+        </div>
+        <div class="nav-wrap">
+            <div class="submenu-bg"></div>
+            <ul class="navi">
+                <li class="fadeIn"><a href="#">정보공개</a>
+                    <div class="submenu-wrap">
+                        <ul class="top-submenu">
+                            <li class="topNavTit"><h2>정보공개</h2></li>
+                            <li><a href="#">정보공개안내</a>
+                                <ul class="submenu">
+                                    <li><a href="#">정보공개제도</a></li>                           
+                                    <li><a href="#">정보공개청구</a></li>                           
+                                    <li><a href="#">사전정보공표</a></li>
+                                    <li><a href="#">정보목록</a></li>
+                                    <li><a href="#">공개/비공개대상정보</a></li>                           
+                                    <li><a href="#">정보공개편람</a></li>                           
+                                    <li><a href="#">업무추진비 공개</a></li>                           
+                                    <li><a href="#">공공저작물</a></li>                          
+                                </ul>
+                            </li>
+                            <li><a href="#">민원·행정처분안내</a>
+                                <ul class="submenu no-data">
+                                    <li><a href="#">하위메뉴없음</a></li>											
+                                </ul>
+                            </li>
+                            <li><a href="#">정책실명제</a>
+                                <ul class="submenu">											
+                                    <li><a href="#">시민신청 실명제</a></li>          
+                                    <li><a href="#">실명제정책목록</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">공공데이터/빅데이터</a>
+                                <ul class="submenu">											
+                                    <li><a href="#">공공데이터 개방</a></li>          
+                                    <li><a href="#">빅데이터 공유</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">감사정보</a>
+                                <ul class="submenu">											
+                                    <li><a href="#">감사운영</a></li>          
+                                    <li><a href="#">감사결과</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">제정정보</a>
+                                <ul class="submenu over">			
+                                    <li><a href="#">예산안내</a></li>
+                                    <li><a href="#">세입세출운용상황</a></li>                          
+                                    <li><a href="#">재정현황</a></li>
+                                    <li><a href="#">재정공시</a></li>
+                                    <li><a href="#">주민참여예산제</a></li>
+                                    <li><a href="#">성인지예산</a></li>
+                                    <li><a href="#">성과계획서</a></li>
+                                    <li><a href="#">세입 세출 결산서</a></li>
+                                    <li><a href="#">한눈에 보는 순천살림</a></li>
+                                    <li><a href="#">예산집행실명제공개</a></li>
+                                    <li><a href="#">중기지방재정계획</a></li>
+                                    <li><a href="#">용역결과보고서</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">계약정보</a>
+                                <ul class="submenu">
+                                    <li><a href="#">입찰정보안내</a></li>
+                                    <li><a href="#">전자입찰</a></li>
+                                    <li><a href="#">입찰공고</a></li>
+                                    <li><a href="#">입찰결과공고</a></li>
+                                    <li><a href="#">수의계약공개</a></li>
+                                    <li><a href="#">계약정보공개</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">공유재산</a>
+                                <ul class="submenu">											
+                                    <li><a href="#">대부(임대)안내</a></li>
+                                    <li><a href="#">매각안내</a></li>
+                                    <li><a href="#">일반재산공개</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">지방보조금 운영</a>
+                                <ul class="submenu no-data last">
+                                    <li><a href="#">하위메뉴없음</a></li>												
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fadeIn"><a href="#">전자민원</a>
+                    <div class="submenu-wrap sub2">
+                        <ul class="top-submenu">
+                            <li class="topNavTit top2"><h2>전자민원</h2></li>
+                            <li><a href="#">민원상담</a>
+                                <ul class="submenu">
+                                    <li><a href="#">민원상담</a></li>                           
+                                    <li><a href="#">시장에게 바란다</a></li>                           
+                                    <li><a href="#">생활불편 시민창구</a></li>
+                                    <li><a href="#">정보통신사용전검사</a></li>                     
+                                </ul>
+                            </li>
+                            <li><a href="#">인터넷민원</a>
+                                <ul class="submenu">
+                                    <li><a href="#">인터넷민원</a></li>											
+                                    <li><a href="#">보안등신고</a></li>											
+                                </ul>
+                            </li>
+                            <li><a href="#">민원안내</a>
+                                <ul class="submenu">											
+                                    <li><a href="#">전문가상담코너</a></li>          
+                                    <li><a href="#">시청 종합민원실 소개</a></li>
+                                    <li><a href="#">편리한 민원제도</a></li>
+                                    <li><a href="#">민원편의시책</a></li>
+                                    <li><a href="#">온라인 정신건강 자가진단</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">민원편람</a>
+                                <ul class="submenu no-data">											
+                                    <li><a href="#">하위메뉴없음</a></li>          
+                                </ul>
+                            </li>
+                            <li><a href="#">여권민원</a>
+                                <ul class="submenu">											
+                                    <li><a href="#">신규/재발급안내</a></li>          
+                                    <li><a href="#">수수료안내</a></li>
+                                    <li><a href="#">여권교부안내</a></li>
+                                    <li><a href="#">여권민원서식</a></li>
+                                    <li><a href="#">여권민원접수/장소</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">공유순천</a>
+                                <ul class="submenu no-data last">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fadeIn"><a href="#">시정소식</a>
+                    <div class="submenu-wrap sub3">
+                        <ul class="top-submenu">
+                            <li class="topNavTit top3"><h2>시정소식</h2></li>
+                            <li><a href="#">새소식</a>
+                                <ul class="submenu">
+                                    <li><a href="#">새소식</a></li>                           
+                                    <li><a href="#">공모전</a></li>                           
+                                    <li><a href="#">카드뉴스</a></li>
+                                    <li><a href="#">타기관소식</a></li>                     
+                                </ul>
+                            </li>
+                            <li><a href="#">행사/공연</a>
+                                <ul class="submenu no-data">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">교육/강좌</a>
+                                <ul class="submenu no-data">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">고시/공고</a>
+                                <ul class="submenu">											
+                                    <li><a href="#">고시/공고</a></li>          
+                                    <li><a href="#">입법예고</a></li>          
+                                    <li><a href="#">순천시보</a></li>          
+                                </ul>
+                            </li>
+                            <li><a href="#">인사채용</a>
+                                <ul class="submenu no-data">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">보도자료</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">보도자료</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">시정자료실</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">업무계획</a></li>
+                                    <li><a href="#">시정업무일정</a></li>
+                                    <li><a href="#">사이버 반상회</a></li>
+                                    <li><a href="#">시정현황</a></li>
+                                    <li><a href="#">국·내외 연수보고서방</a></li>
+                                    <li><a href="#">조직 운영 5대 지표</a></li>
+                                    <li><a href="#">순천시 수상 현황</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">맞춤정책</a>
+                                <ul class="submenu no-data last">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fadeIn"><a href="#">시민참여</a>
+                    <div class="submenu-wrap sub4">
+                        <ul class="top-submenu">
+                            <li class="topNavTit top4"><h2>시민참여</h2></li>
+                            <li><a href="#">순천e민주정원</a>
+                                <ul class="submenu">
+                                    <li><a href="#">시민제안</a></li>                           
+                                    <li><a href="#">시민투표</a></li>                           
+                                    <li><a href="#">설문조사</a></li>                  
+                                </ul>
+                            </li>
+                            <li><a href="#">주민조례 청구제도</a>
+                                <ul class="submenu no-data">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">시민제안</a>
+                                <ul class="submenu">
+                                    <li><a href="#">정책제안</a></li>                           
+                                    <li><a href="#">예산절감제안</a></li>                           
+                                    <li><a href="#">규제개혁</a></li>                  
+                                    <li><a href="#">공직노하우제안</a></li>                  
+                                    <li><a href="#">자유발언대</a></li>                  
+                                    <li><a href="#">칭찬합시다</a></li>                  
+                                </ul>
+                            </li>
+                            <li><a href="#">신고센터</a>
+                                <ul class="submenu">											
+                                    <li><a href="#">갑질행위신고</a></li>          
+                                    <li><a href="#">청렴신문고</a></li>          
+                                    <li><a href="#">청렴제안하기</a></li>          
+                                    <li><a href="#">시민암행어사</a></li>          
+                                    <li><a href="#">예산낭비신고</a></li>          
+                                    <li><a href="#">소극행정신고</a></li>          
+                                </ul>
+                            </li>
+                            <li><a href="#">적극행정</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">적극행정 추진방안</a></li>
+                                    <li><a href="#">적극행정 시민추천</a></li>
+                                    <li><a href="#">적극행정 국민추천</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">순천시청년센터</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">청년활동포인트제란?</a></li>
+                                    <li><a href="#">청년포인트 적립현황</a></li>
+                                    <li><a href="#">내포인트 적립/확인</a></li>
+                                    <li><a href="#">순천시청년센터 블로그</a></li>
+                                    <li><a href="#">센터소개</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">순천시 인생이모작 지원센터</a>
+                                <ul class="submenu no-data">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">모바일순천시민카드</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">시민카드 소개</a></li>
+                                    <li><a href="#">시민카드 이용안내</a></li>
+                                    <li><a href="#">시민카드 설치 및 연계</a></li>
+                                    <li><a href="#">민간제휴업체 참여신청</a></li>
+                                    <li><a href="#">시민카드 소식</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">경정선전철사업 서명운동</a>
+                                <ul class="submenu no-data">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">순천의대유치 서명운동</a>
+                                <ul class="submenu no-data last">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fadeIn"><a href="#">순천소개</a>
+                    <div class="submenu-wrap sub5">
+                        <ul class="top-submenu">
+                            <li class="topNavTit top5"><h2>순천소개</h2></li>
+                            <li><a href="#">시청안내</a>
+                                <ul class="submenu">
+                                    <li><a href="#">조직도</a></li>                           
+                                    <li><a href="#">인사정보</a></li>                           
+                                    <li><a href="#">직원검색</a></li>                  
+                                    <li><a href="#">전화번호</a></li>                  
+                                    <li><a href="#">청사안내</a></li>                  
+                                    <li><a href="#">오시는길</a></li>                  
+                                    <li><a href="#">주차안내</a></li>                  
+                                </ul>
+                            </li>
+                            <li><a href="#">비전/시정방침</a>
+                                <ul class="submenu no-data">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">순천의 상징</a>
+                                <ul class="submenu">
+                                    <li><a href="#">시상징</a></li>                           
+                                    <li><a href="#">시민의헌장,노래</a></li>                                        
+                                </ul>
+                            </li>
+                            <li><a href="#">순천의 현황</a>
+                                <ul class="submenu">											
+                                    <li><a href="#">자연환경</a></li>          
+                                    <li><a href="#">행정구역</a></li>          
+                                    <li><a href="#">읍면동</a></li>          
+                                    <li><a href="#">순천통계</a></li>          
+                                    <li><a href="#">자매결연도시</a></li>          
+                                    <li><a href="#">국제교류도시 사진전</a></li>          
+                                </ul>
+                            </li>
+                            <li><a href="#">순천의 역사</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">시사</a></li>
+                                    <li><a href="#">순천의 얼</a></li>
+                                    <li><a href="#">순천의 자료</a></li>
+                                    <li><a href="#">지명유래</a></li>
+                                    <li><a href="#">순천인물</a></li>
+                                    <li><a href="#">역대시장</a></li>
+                                    <li><a href="#">옛모습</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">순천의지금</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">순천소식지</a></li>
+                                    <li><a href="#">순천은 지금</a></li>
+                                    <li><a href="#">순천 SNS</a></li>
+                                    <li><a href="#">순천인물자료찾기</a></li>
+                                    <li><a href="#">전자책</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">순천의 미래</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">2030순천 도시기본계획</a></li>
+                                    <li><a href="#">도시종합발전계획</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">기록보관소</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">기록보관소란?</a></li>
+                                    <li><a href="#">사진</a></li>
+                                    <li><a href="#">영상</a></li>
+                                    <li><a href="#">포스터</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">디지털 순천문화대전</a>
+                                <ul class="submenu no-data">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">시장실</a>
+                                <ul class="submenu no-data last">			
+                                    <li><a href="#">하위메뉴없음</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fadeIn"><a href="#">분야별정보</a>
+                    <div class="submenu-wrap sub6">
+                        <ul class="top-submenu">
+                            <li class="topNavTit top6"><h2>분야별정보</h2></li>
+                            <li><a href="#">민원·행정</a>
+                                <ul class="submenu">
+                                    <li><a href="#">시정일정</a></li>                           
+                                    <li><a href="#">위원회동정</a></li>                           
+                                    <li><a href="#">자원봉사센터</a></li>                  
+                                    <li><a href="#">제정/운영</a></li>                  
+                                    <li><a href="#">행정서비스헌장</a></li>                  
+                                    <li><a href="#">지방규제개혁개요</a></li>                  
+                                    <li><a href="#">전입세대 생활정보</a></li>                  
+                                </ul>
+                            </li>
+                            <li><a href="#">복지·보건</a>
+                                <ul class="submenu over">			
+                                    <li><a href="#">복지 새소식</a></li>
+                                    <li><a href="#">코로나19</a></li>
+                                    <li><a href="#">사회복지</a></li>
+                                    <li><a href="#">실버복지</a></li>
+                                    <li><a href="#">장애인복지</a></li>
+                                    <li><a href="#">여성가족복지</a></li>
+                                    <li><a href="#">아동복지</a></li>
+                                    <li><a href="#">청소년복지</a></li>
+                                    <li><a href="#">한눈에 보는 복지정보</a></li>
+                                    <li><a href="#">보건소</a></li>
+                                    <li><a href="#">노인복지관</a></li>
+                                    <li><a href="#">육아종합지원센터</a></li>
+                                    <li><a href="#">순천시어린이급식관리지원센터</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">일자리·교육 </a>
+                                <ul class="submenu">
+                                    <li><a href="#">취업정보</a></li>                           
+                                    <li><a href="#">관련사이트</a></li>                                        
+                                    <li><a href="#">시민정보화현장교육</a></li>                                        
+                                    <li><a href="#">순천시 시민정보화온라인교육</a></li>                                        
+                                </ul>
+                            </li>
+                            <li><a href="#">지리·교통</a>
+                                <ul class="submenu">											
+                                    <li><a href="#">공지사항</a></li>          
+                                    <li><a href="#">공간정보</a></li>          
+                                    <li><a href="#">주차정보</a></li>          
+                                    <li><a href="#">버스운행정보</a></li>          
+                                    <li><a href="#">시외/고속버스정보</a></li>          
+                                    <li><a href="#">철도정보</a></li>          
+                                    <li><a href="#">항공정보</a></li>          
+                                    <li><a href="#">공항버스</a></li>          
+                                    <li><a href="#">국가교통정보</a></li>          
+                                    <li><a href="#">도로명 주소안내</a></li>          
+                                </ul>
+                            </li>
+                            <li><a href="#">세무·법률</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">세무정보</a></li>
+                                    <li><a href="#">법률정보</a></li>
+                                    <li><a href="#">자치법규</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">도시·주택</a>
+                                <ul class="submenu">			
+                                    <li><a href="#">개발사업 완료현황</a></li>
+                                    <li><a href="#">주택정보</a></li>
+                                    <li><a href="#">경관계획</a></li>
+                                    <li><a href="#">공공디자인</a></li>
+                                    <li><a href="#">도시재생지원센터</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">기업경제</a>
+                                <ul class="submenu last">			
+                                    <li><a href="#">창업정보</a></li>
+                                    <li><a href="#">산업단지</a></li>
+                                    <li><a href="#">지역전략사업</a></li>
+                                    <li><a href="#">투자유치</a></li>
+                                    <li><a href="#">중소기업지원</a></li>
+                                    <li><a href="#">농업기술센터</a></li>
+                                    <li><a href="#">순천시사회적경제기업</a></li>
+                                    <li><a href="#">농산물도매시장</a></li>
+                                </ul>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="location-box">
+        <ul class="location">
+            <li>Home ></li>
+            <li>시정소식 ></li>
+            <li>새소식 ></li>
+            <li>새소식</li>
+        </ul>
+    </div>
+    <div class="body-wrap">
+        <div class="left-menu">
+            <nav class="gnb">
+                <h1>시정소식</h1>
+                <ul class="gnb_menu">
+                    <li><a href="#">새소식</a>
+                        <button class="open_gnb_sub"><span>gnb open submenu</span></button>
+                        <ul class="gnb_submenu">
+                            <li class="active"><a href="#">새소식</a></li>                           
+                            <li><a href="#">공모전</a></li>                           
+                            <li><a href="#">카드뉴스</a></li>
+                            <li><a href="#">타기관소식</a></li>                     
+                        </ul>
+                    </li>
+                    <li><a href="#">행사/공연</a></li>
+                    <li><a href="#">교육/강좌</a></li>
+                    <li><a href="#">고시/공고</a>
+                        <button class="open_gnb_sub"><span>gnb open submenu</span></button>
+                        <ul class="gnb_submenu">											
+                            <li><a href="#">고시/공고</a></li>          
+                            <li><a href="#">입법예고</a></li>          
+                            <li><a href="#">순천시보</a></li>          
+                        </ul>
+                    </li>
+                    <li><a href="#">인사채용</a></li>
+                    <li><a href="#">보도자료</a>
+                        <button class="open_gnb_sub"><span>gnb open submenu</span></button>
+                        <ul class="gnb_submenu">			
+                            <li><a href="#">보도자료</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">시정자료실</a>
+                        <button class="open_gnb_sub"><span>gnb open submenu</span></button>
+                        <ul class="gnb_submenu">			
+                            <li><a href="#">업무계획</a></li>
+                            <li><a href="#">시정업무일정</a></li>
+                            <li><a href="#">사이버 반상회</a></li>
+                            <li><a href="#">시정현황</a></li>
+                            <li><a href="#">국·내외 연수보고서방</a></li>
+                            <li><a href="#">조직 운영 5대 지표</a></li>
+                            <li><a href="#">순천시 수상 현황</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">맞춤정책</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cont-wrap">
+            <div class="cont-header">
+                <h2 class="cont-title">새소식</h2>
+                <div class="cont-search-box">
+                    <select>
+                        <option>제목+내용</option>
+                        <option>제목</option>
+                        <option>담당부서</option>
+                    </select>
+                    <input type="text" class="cont-search" name="cont-search" title="컨텐츠검색">
+                </div>
+            </div>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>담당부서</th>
+                            <th>작성일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td-number">7913</td>
+                            <td class="td-title">2022년 순천시 시민안전보험 시행 알림</td>
+                            <td class="td-writer">안전총괄과</td>
+                            <td>2022-04-08</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7912</td>
+                            <td class="td-title">순천시 청소년문화의집 5~6월 「교육·문화 프로그램」 수강생 모집</td>
+                            <td class="td-writer">아동청소년과</td>
+                            <td>2022-04-07</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7911</td>
+                            <td class="td-title">2022년 문화가 있는 날 &#60;청춘마이크_광주전남&#62; 청년예술가 모집 안내</td>
+                            <td class="td-writer">문화예술과</td>
+                            <td>2022-04-06</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7910</td>
+                            <td class="td-title">2023순천만국제정원박람회 D-365 전국 어린이 그림대회 알림</td>
+                            <td class="td-writer"><span>(재)순천만국제정원박리회</span></td>
+                            <td>2022-04-06</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7909</td>
+                            <td class="td-title">여성새로일하기센터 직업교육 훈련생 모집 안내</td>
+                            <td class="td-writer">가족보육과</td>
+                            <td>2022-04-05</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7908</td>
+                            <td class="td-title">2022년 상반기 전남 인재육성 장학생 선발 계획 안내</td>
+                            <td class="td-writer">평생교육과</td>
+                            <td>2022-04-05</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7907</td>
+                            <td class="td-title">‘도심권 고압송전선로 지중화 사업’ 추진에 따른 교통통제 알림</td>
+                            <td class="td-writer">지역경제과</td>
+                            <td>2022-04-04</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7906</td>
+                            <td class="td-title">코로나19 격리대상자 시험 응시목적 외출허용 안내</td>
+                            <td class="td-writer">감염병관리과</td>
+                            <td>2022-04-04</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7905</td>
+                            <td class="td-title">문화가있는날 - 토크콘서트(나의 이야기를 그리다 '힙합과 퓨전...</td>
+                            <td class="td-writer">문화예술과</td>
+                            <td>2022-04-08</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7904</td>
+                            <td class="td-title">2022년 순천시 시민안전보험 시행 알림</td>
+                            <td class="td-writer">안전총괄과</td>
+                            <td>2022-04-01</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7903</td>
+                            <td class="td-title">「2022년 전남 청년 툰 일자리사업」 참여 청년근로자 모집 안내</td>
+                            <td class="td-writer">투자일자리과</td>
+                            <td>2022-04-01</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7902</td>
+                            <td class="td-title">학교밖청소년지원센터 4월 프로그램 참여 청소년 모집 안내</td>
+                            <td class="td-writer">아동청소년과</td>
+                            <td>2022-03-31</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7901</td>
+                            <td class="td-title">2022 코리아오픈 배드민턴 선수권대회 안내</td>
+                            <td class="td-writer">체육진흥과</td>
+                            <td>2022-03-31</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7900</td>
+                            <td class="td-title">2022년 법인지방소득세 신고.납부 안내</td>
+                            <td class="td-writer">세정과</td>
+                            <td>2022-03-30</td>
+                        </tr>
+                        <tr>
+                            <td class="td-number">7899</td>
+                            <td class="td-title">반려나무(내나무) 나누어주기 행사 안내</td>
+                            <td class="td-writer">공원녹지과</td>
+                            <td>2022-03-29</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="paginate">
+                <a href="#" class="pagefirst"><span>pagefirst</span></a>
+                <a href="#" class="pagePrev"><span>pageNext</span></a>
+                <strong title="현재페이지">1</strong>
+                <a href="#" title="2">2</a>
+                <a href="#" title="3">3</a>
+                <a href="#" title="4">4</a>
+                <a href="#" title="5">5</a>
+                <a href="#" title="6">6</a>
+                <a href="#" title="7">7</a>
+                <a href="#" title="8">8</a>
+                <a href="#" title="9">9</a>
+                <a href="#" title="10">10</a>
+                <a href="#" class="pageNext"><span>pageNext</span></a>
+                <a href="#" class="pageEnd"><span>pageEnd</span></a>
+            </div>
+            <div class="qr-box">
+                <div class="qr-info">
+                    <dl>
+                        <dt>QR CODE</dt>
+                        <dd>오른쪽QR Code이미지를 스마트폰에 인식시키면 자동으로 이페이지로 연결됩니다.
+                            이 QR Code는 새소식 페이지의 정보를 담고 있습니다.</dd>
+                    </dl>
+                    <div class="qr"></div>
+                </div>
+                <div class="origin-box">
+                    <a href="#" class="origin-img"><img src="images/qr_icon_11.jpg"></a>
+                    <p>
+                        <strong>[출처표시-비상업적-변경금지]</strong>
+                        <span>출처표시/비상업적 이용만 가능/변형 등 2차적 저작물 작성금지</span>
+                    </p>
+                </div>
+                <div class="adminArea">
+                    <dl>
+                        <dt>콘텐츠 담당부서:</dt>
+                        <dd>정보통신과</dd>
+                        <dt>전화:</dt>
+                        <dd>061-749-3114</dd>
+                        <dt>콘텐츠 최종 수정일:</dt>
+                        <dd>2020-07-31</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-wrap">
+            <select name="site-go1" id="site-link1">
+                <option value="">소비자24</option>
+                <option value="">동물무료입양안내</option>
+                <option value="">농지임대수탁</option>
+                <option value="">대한법률구조공단</option>
+                <option value="">고용노동부</option>
+                <option value="">중앙선거관리위원회</option>
+            </select>
+            <button id="site-go1">이동</button>
+            <select name="site-go2" id="site-link2">
+                <option value="">읍면동</option>
+            </select>
+            <button id="site-go2">이동</button>
+            <select name="site-go3" id="site-link3">
+                <option value="">유관기관</option>
+                <option value="">광주지법순천지원</option>
+                <option value="">광주지검순천지청</option>
+                <option value="">순천교육청</option>
+                <option value="">순천경찰서</option>
+                <option value="">순천세무서</option>
+                <option value="">순천우체국</option>
+                <option value="">순천교도소</option>
+                <option value="">전남동부보훈지청</option>
+                <option value="">통계청 순천사무소</option>
+                <option value="">순천소방서</option>
+                <option value="">순천국토관리사무소</option>
+                <option value="">농산물품질관리원 전남지원 순천광양사무소</option>
+                <option value="">순천 고용복지+센터</option>
+                <option value="/">전라남도 동부지역본부</option>
+                <option value="">순천시선거관리위원회</option>
+                <option value="">전남동물위생시험소 동부지소</option>
+                <option value="">법무부 광주보호관찰소 순천지소</option>
+                <option value="">여수MBC순천지사</option>
+                <option value="">CBS전남본부</option>
+                <option value="">한국전력공사 순천지사</option>
+                <option value="">KBS 순천방송국</option>
+                <option value="">cj헬로비전아라방송</option>
+                <option value="">한국국토정보공사 순천시지사</option>
+                <option value="">한국주택금융공사 전남지사</option>
+                <option value="">순천상공회의소</option>
+                <option value="">한국가스공사 동부지사</option>
+                <option value="">한국산업인력공단 전남지사</option>
+                <option value="">한국감정원 전남순천지사</option>
+                <option value="">국민연금공단 순천지사</option>
+                <option value="">한국수자원공사 주암댐관리단</option>
+                <option value="">한국철도공사 전남본부</option>
+                <option value=" ">한국철도공사 순천역</option>
+                <option value="">교통안전공단 순천자동차검사소</option>
+                <option value="">한국전기안전공사 전남동부지사</option>
+                <option value="">한국농어촌공사 순천광양여수지사</option>
+                <option value="">한국철도시설공단 호남지역본부</option>
+                <option value="">재단법인 전남테크노파크</option>
+                <option value="">순천소상공인지원센터</option>
+            </select>
+            <button id="site-go3">이동</button>
+            <select name="site-go4" id="site-link4">
+                <option value="">사회단체</option>
+                <option value="">순천여자기독교청년회</option>
+                <option value="">순천환경운동연합</option>
+                <option value="">순천시 지속가능발전협의회</option>
+                <option value="">순천YWCA</option>
+                <option value="">순천YMCA (블로그)</option>
+                <option value="">민족문제연구소 전남동부지부</option>
+                <option value="">순천의료생협요양병원</option>
+                <option value="">순천아이쿱생협</option>
+                <option value="">순천YMCA아이쿱생협</option>
+                <option value="">한국예총순천지부</option>
+                <option value="">순천시시각장애인스포츠연맹</option>
+                <option value="">순천남승룡마라톤대회조직위원회</option>
+                <option value="">순천시 영상미디어센터</option>
+            </select>
+            <button id="site-go4">이동</button>
+            <p class="copy">
+                개인정보처리방침 | 이메일무단수집거부 | 저작권정책 뷰어다운로드 | 주요전화번호 | 익명인터넷 | 게재물관리에 관한 지침 | 원격지원 | 찾아오시는길 | 사이트맵
+                전라남도 순천시 장명로 30(장천동) 우편번호 : 57956 대표전화안내 : 061-749-3114 팩스 : 061-749-4600
+                COPYRIGHT © 2018 SUNCHEON. All Rights Reserved. Contact Us suncheonsi@korea.k
+            </p>
+            <div class="btlogo">
+                <img class="bt-logo" src="images/btlogo_145.png" alt="하단 로고">
+                <img src="images/sitemap_logo_148.jpg">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
