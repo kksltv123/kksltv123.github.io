@@ -546,10 +546,11 @@ nav > ul > li > a:hover { color: var(--sub_color2); }
 .design_info > p {
     font-weight: 300;
 }
+
 #img_list {
     width: 1040px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 80px;
 }
 #img_list a {
     display: block;
@@ -782,6 +783,152 @@ nav > ul > li > a:hover { color: var(--sub_color2); }
 }
 #next_bottom:hover, #prev_bottom:hover {
     opacity: 1;
+}
+@media (max-width: 1400px) {
+    #design_box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #design {
+        width: 800px;
+        position: relative;
+        
+    }
+    .design_info {
+        width: 160px;
+        text-align: center;
+    }
+    .design_info > h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .design_info > p {
+        font-weight: 300;
+        font-size: 14px;
+    }
+    
+    #img_list {
+        width: 555px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    #img_list a {
+        display: block;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        width: 160px;
+        height: 85px;
+    }
+    #img_list img { 
+        display: block;
+        width: 100%; 
+    }
+    #img_list_top {
+        overflow: hidden;
+        width: 555px;
+        margin: 0 auto;
+    }
+    #img_list_top > ul {
+        width: 200%;
+    }
+    #img_list_top > ul::after { display: block; content: ""; clear: both; }
+    #img_list_top > ul > li {
+        float: left;
+        margin-right: 15px;
+    }
+    #img_list_top > ul > li:nth-child(4n) { margin-left: 15px; }
+    #img_list_bottom {
+        overflow: hidden;
+        width: 555px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    #img_list_bottom > ul {
+        width: 200%;
+    }
+    #img_list_bottom > ul > li {
+        float: left;
+        margin-right: 15px;
+    }
+    #img_list_bottom > ul > li:nth-child(4n) { margin-left: 15px; }
+    #img_list_bottom > ul::after { display: block; content: ""; clear: both; }
+    #img_list_top > ul > li > a > img { display: block; }
+    #img_list_bottom > ul > li > a > img { display: block; }
+    #img_list_top > ul > li > a > img:hover {
+        transform: scale(1.1);
+        transition-duration: 200ms;
+    }
+    #img_list_bottom > ul > li > a > img:hover {
+        transform: scale(1.1);
+        transition-duration: 200ms;
+    }
+    
+    #design > button {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    #prev_button {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 45px;
+        background-image: url('../images/left_button_36.png');
+    }
+    #prev_button > span { display: none; }
+    #next_button {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 45px;
+        background-image: url('../images/right_button_39.png');
+    }
+    #next_button > span { display: none; }
+    #layout_design {
+        position: relative;
+    }
+    #first_circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--sub_color2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #second_circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--sub_color2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #circle_box {
+        width: 50px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    #circle_box::after { display: block; clear: both; content: ""; }
+    #circle_box > div {
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin-left: 10px;
+        position: relative;
+    }
+    #circle_box > div:first-child { margin-left: 0; }
 }
 footer {
     background-color: var(--sub_color1);

@@ -122,20 +122,16 @@ $(document).ready(function() {
 
     // 이미지 버튼
     $('#next_button').click(function() {
-        $('#img_list_top > ul').animate({'margin-left' : '-1040px' });
+        $('#img_list_top > ul').animate({'margin-left' : '-100%' });
+        $('#img_list_bottom > ul').animate({'margin-left' : '-100%' });
         $('#first_circle').animate({ 'width' : '10px', 'height' : '10px' });
         $('#second_circle').animate({ 'width' : '20px', 'height' : '20px' });
     })
     $('#prev_button').click(function() {
         $('#img_list_top > ul').animate({'margin-left' : '0' });
+        $('#img_list_bottom > ul').animate({'margin-left' : '0' });
         $('#first_circle').animate({ 'width' : '20px', 'height' : '20px' });
         $('#second_circle').animate({ 'width' : '10px', 'height' : '10px' });
-    })
-    $('#next_button').click(function() {
-        $('#img_list_bottom > ul').animate({'margin-left' : '-1040px' });
-    })
-    $('#prev_button').click(function() {
-        $('#img_list_bottom > ul').animate({'margin-left' : '0' });
     })
 
     // 이미지 갤러리
