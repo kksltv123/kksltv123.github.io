@@ -222,7 +222,7 @@ nav > ul > li > a:hover { color: var(--sub_color2); }
     left: 101%;
     color: #cb99cc;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     #profile_img {
         height: 257px;
         width: 200px;
@@ -277,86 +277,94 @@ nav > ul > li > a:hover { color: var(--sub_color2); }
     #profile_info > div:nth-child(2) { width: 120px; float: right; }
     #profile_info > div:nth-child(3) dd { padding-right: 40px;}
     #skill_info > h3 {
-        line-height: 60px;
+        line-height: 30px;
         padding-left: 100px;
-        font-size: 26px;
+        font-size: 20px;
     }
     #skill_info > ul::after { display: block; content: ""; clear: both; }
     #skill_info > ul > li {
         margin-left: 60px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         width: 700px; 
         float: left;
     }
-    #skill_info > ul > li > img { float: left ;}
+    #skill_info > ul > li > img { 
+        float: left;
+        width: 30px;
+        height: 30px;
+    }
     .gage_bg {
         display: block;
         width: 600px;
-        height: 25px;
+        height: 15px;
         background: var(--sub_color1);
         float: right;
         margin-top: 10px;
-        border-radius: 12px;
+        border-radius: 8px;
     }
     #ps_gage {
         display: block;
         width: 0;
-        height: 25px;
-        border-radius: 12px;
+        height: 15px;
+        border-radius: 8px;
         background-color: #30a8ff;
         position: relative;
     }
     #ps_gage > span {
         position: absolute;
         display: block;
-        line-height: 25px;
+        line-height: 15px;
         left: 101%;
         color: #30a8ff;
+        font-size: 14px;
     }
     #ai_gage {
         display: block;
         width: 0;
-        height: 25px;
-        border-radius: 12px;
+        height: 15px;
+        border-radius: 8px;
         background-color: #ff9a00;
         position: relative;
     }
     #ai_gage > span {
         position: absolute;
         display: block;
-        line-height: 25px;
+        line-height: 15px;
         left: 101%;
         color: #ff9a00;
+        font-size: 14px;
     }
     #hc_gage {
         display: block;
         width: 0;
-        height: 25px;
-        border-radius: 12px;
+        height: 15px;
+        border-radius: 8px;
         background-color: #4e65a8;
         position: relative;
     }
     #hc_gage > span {
         position: absolute;
         display: block;
-        line-height: 25px;
+        line-height: 15px;
         left: 101%;
         color: #4e65a8;
+        font-size: 14px;
     }
     #jq_gage {
         display: block;
         width: 0;
-        height: 25px;
-        border-radius: 12px;
+        height: 15px;
+        border-radius: 8px;
         background-color: #cb99cc;
         position: relative;
     }
     #jq_gage > span {
         position: absolute;
         display: block;
-        line-height: 25px;
+        line-height: 15px;
         left: 101%;
         color: #cb99cc;
+        font-size: 14px;
     }
 }
 .web {
