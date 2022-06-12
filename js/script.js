@@ -16,24 +16,24 @@ $(document).ready(function() {
     }
     function webMoveEffect() {
         if (pageIndex == 2) {
-            $('#web_info_bulk').stop().animate({ opacity : "100%", left : "55%" }, 1000);
+            $('#web_info_bulk').stop().animate({ opacity : "100%", left : "55%" }, 1000).css({display : 'block'});
         } else {
             setTimeout(function() {
-                $('#web_info_bulk').stop().css({ opacity : "0", left : "80%" });
+                $('#web_info_bulk').stop().css({ opacity : "0", left : "80%", display : 'none' })
             }, 300)
         }
         if (pageIndex == 3) {
-            $('#web_info_hany').stop().animate({ opacity : "100%", left : "55%" }, 1000);
+            $('#web_info_hany').stop().animate({ opacity : "100%", left : "55%" }, 1000).css({'display' : 'block'});
         } else {
             setTimeout(function() {
-                $('#web_info_hany').stop().css({ opacity : "0", left : "80%" });
+                $('#web_info_hany').stop().css({ opacity : "0", left : "80%", display : 'none' });
             }, 300)
         }
         if (pageIndex == 4) {
-            $('#web_info_suncheon').stop().animate({ opacity : "100%", left : "55%" }, 1000);
+            $('#web_info_suncheon').stop().animate({ opacity : "100%", left : "55%" }, 1000).css({'display' : 'block'});
         } else {
             setTimeout(function() {
-                $('#web_info_suncheon').stop().css({ opacity : "0", left : "80%" });
+                $('#web_info_suncheon').stop().css({ opacity : "0", left : "80%", display : 'none' });
             }, 300)
         }
     }
