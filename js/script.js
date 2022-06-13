@@ -222,9 +222,9 @@ $(document).ready(function() {
    var $dtail = $('.detail');
 
    const graphic = [
-    "images/bulk_detail.jpg",
-    "images/hany_detail.jpg",
-    "images/suncheon_detail.png",
+    "images/bulk_detail.png",
+    "images/hany_detail.png",
+    "images/sunchoen_detail.png",
     ]
 
     $detailBtn.click(function() {
