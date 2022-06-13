@@ -52,7 +52,7 @@ a { text-decoration: none; }
     padding-top: 20px;
 }
 
-/* 네비게이션 */
+/* 내비게이션 */
 .menu { text-align: center; width: 100%; position: relative; }
 .navi::after { display: block; clear: both; content: ""; }
 .navi > li { float: left;}
@@ -189,7 +189,7 @@ button {
 }
 #signature {
     width: 100%;
-    height: 300px;
+    height: 600px;
     background-image: url("../images/signature.jpg");
     background-size: cover;
 }
@@ -197,17 +197,18 @@ button {
     max-width: 1200px;
     position: relative;
     margin: 0 auto;
-    height: 300px;
+    height: 600px;
 }
 #signature1 {
     position: absolute;
-    top: 10px;
-    left: 0px;
-    opacity: 0;
-    width: 373px;
-    height: 278px;
+    top: 100px;
+    left: -30%;
+    width: 559px;
+    height: 417px;
     background: url('../images/signature_03.png') no-repeat center;
     background-size: cover;
+    opacity: 0%;
+    display: none;
 }
 #signature1 > span {
     display: none;
@@ -215,24 +216,25 @@ button {
 #signature2 {
     position: absolute;
     bottom: 0;
-    right: 0px;
-    opacity: 0;
-    width: 332px;
-    height: 282px;
+    right: -30%;
+    width: 498px;
+    height: 423px;
     background: url('../images/signature2_04.png') no-repeat center;
     background-size: cover;
+    opacity: 0%;
+    display: none;
 }
 #signature2 > span {
     display: none;
 }
 #signature_btn {
     position: absolute;
-    bottom: 25px;
-    right: 10px;
+    bottom: 50px;
+    right: 20px;
 }
 #signature_btn > a {
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     color: #ffffff;
     line-height: 30px;
     padding-left: 10px;
@@ -240,11 +242,6 @@ button {
     border: 1px solid #ffffff;
     transition: 300ms ease-in-out;
     box-sizing: border-box;
-}
-#signature_btn > a:hover {
-    background: var(--main-color);
-    color: var(--sub_color2);
-    border-color: var(--main-color);
 }
 @media (max-width: 1500px) {
     #signature {
@@ -307,64 +304,6 @@ button {
         background: var(--main-color);
         color: var(--sub_color2);
         border-color: var(--main-color);
-    }
-}
-@media (min-width: 1220px) {
-    #signature {
-        width: 100%;
-        height: 600px;
-        background-image: url("../images/signature.jpg");
-        background-size: cover;
-    }
-    #signature-wrap {
-        max-width: 1200px;
-        position: relative;
-        margin: 0 auto;
-        height: 600px;
-    }
-    #signature1 {
-        position: absolute;
-        top: 100px;
-        left: -30%;
-        width: 559px;
-        height: 417px;
-        background: url('../images/signature_03.png') no-repeat center;
-        background-size: cover;
-        opacity: 100%;
-        display: none;
-    }
-    #signature1 > span {
-        display: none;
-    }
-    #signature2 {
-        position: absolute;
-        bottom: 0;
-        right: -30%;
-        width: 498px;
-        height: 423px;
-        background: url('../images/signature2_04.png') no-repeat center;
-        background-size: cover;
-        opacity: 100%;
-        display: none;
-    }
-    #signature2 > span {
-        display: none;
-    }
-    #signature_btn {
-        position: absolute;
-        bottom: 50px;
-        right: 20px;
-    }
-    #signature_btn > a {
-        display: block;
-        font-size: 20px;
-        color: #ffffff;
-        line-height: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border: 1px solid #ffffff;
-        transition: 300ms ease-in-out;
-        box-sizing: border-box;
     }
 }
 

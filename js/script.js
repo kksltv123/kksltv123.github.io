@@ -82,7 +82,7 @@ $(document).ready(function() {
             }
             webMoveEffect();
         }
-        // 네비게이션 배경 제거
+        // 내비게이션 배경 제거
         if (pageIndex == 0) {
             $('header').removeClass('active');
         }  
@@ -97,7 +97,7 @@ $(document).ready(function() {
     // 원페이지 스크롤
     $window.on("wheel", $wheelFunction);
 
-    // 네비게이션
+    // 내비게이션
     $('#nav_home').click(function() {
         $html.animate({ scrollTop : 0 * $window.height() });
         pageIndex = 0;

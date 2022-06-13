@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // 네비게이션
+    // 내비게이션
     $('.slide_effect').hover(
         function() {
             $('.submenu').stop().slideDown(300);

@@ -52,7 +52,7 @@ a { text-decoration: none; }
     padding-top: 20px;
 }
 
-/* 네비게이션 */
+/* 내비게이션 */
 .menu { text-align: center; width: 100%; position: relative; }
 .navi::after { display: block; clear: both; content: ""; }
 .navi > li { float: left;}

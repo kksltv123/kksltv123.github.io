@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // 네비게이션
+    // 내비게이션
     $('.slide_effect').hover(
         function() {
             $('.submenu').stop().slideDown(300);
@@ -206,20 +206,20 @@ $(document).ready(function() {
 	var $banner_wrap = $('#banner_wrap');
 	var $offset = 700;
 	var $bannerOST = $banner_wrap.offset().top - $offset
-	if (matchMedia("screen and (min-width: 1220px)").matches) {
-		// 1220px 이상에서 사용할 JavaScript
+	if (matchMedia("screen and (max-width: 1500px)").matches) {
+		// 1500px 이하에서 사용할 JavaScript
 		$(window).scroll(function() {
 			if($(this).scrollTop() > $bannerOST) {
-				$('#signature1').animate({ left: '5%' }, 1000).css({ display : 'block' });
-				$('#signature2').animate({ right: '5%' }, 1000).css({ display : 'block' });
+				$('#signature1').animate({ opacity : "100%", left: '15%' }, 1000).css({ display : 'block' });
+				$('#signature2').animate({ opacity : "100%", right: '15%' }, 1000).css({ display : 'block' });
 			}
 		});
 	  } else {
-		  // 1220px 미만에서 사용할 JavaScript
+		  // 1500px 초과에서 사용할 JavaScript
 		  $(window).scroll(function() {
 			  if($(this).scrollTop() > $bannerOST) {
-				  $('#signature1').animate({ opacity : "100%", left: '15%' }, 1000).css({ display : 'block' });
-				  $('#signature2').animate({ opacity : "100%", right: '15%' }, 1000).css({ display : 'block' });
+				  $('#signature1').animate({ opacity : "100%", left: '5%' }, 1000).css({ display : 'block' });
+				  $('#signature2').animate({ opacity : "100%", right: '5%' }, 1000).css({ display : 'block' });
 			  }
 		  });
 	  }

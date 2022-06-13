@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // 네비게이션
+    // 내비게이션
     $('.fadeIn').mouseover(function() {
         $('.submenu-bg').stop().fadeIn(200);
         $(this).children('.submenu-wrap').stop().fadeIn(200);
