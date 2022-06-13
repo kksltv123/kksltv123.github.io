@@ -246,7 +246,7 @@ button {
     color: var(--sub_color2);
     border-color: var(--main-color);
 }
-@media (max-width: 1219px) {
+@media (max-width: 1500px) {
     #signature {
         width: 100%;
         height: 300px;
