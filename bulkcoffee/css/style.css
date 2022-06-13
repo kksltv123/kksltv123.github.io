@@ -263,6 +263,7 @@ button {
         position: absolute;
         top: 10px;
         left: -50px;
+        display: none;
         opacity: 0;
         width: 373px;
         height: 278px;
@@ -276,6 +277,7 @@ button {
         position: absolute;
         bottom: 0;
         right: -50px;
+        display: none;
         opacity: 0;
         width: 332px;
         height: 282px;
@@ -329,6 +331,7 @@ button {
         background: url('../images/signature_03.png') no-repeat center;
         background-size: cover;
         opacity: 100%;
+        display: none;
     }
     #signature1 > span {
         display: none;
@@ -342,6 +345,7 @@ button {
         background: url('../images/signature2_04.png') no-repeat center;
         background-size: cover;
         opacity: 100%;
+        display: none;
     }
     #signature2 > span {
         display: none;

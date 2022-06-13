@@ -210,16 +210,16 @@ $(document).ready(function() {
 		// 1220px 이상에서 사용할 JavaScript
 		$(window).scroll(function() {
 			if($(this).scrollTop() > $bannerOST) {
-				$('#signature1').animate({ left: '5%' }, 1000);
-				$('#signature2').animate({ right: '5%' }, 1000);
+				$('#signature1').animate({ left: '5%' }, 1000).css({ display : 'block' });
+				$('#signature2').animate({ right: '5%' }, 1000).css({ display : 'block' });
 			}
 		});
 	  } else {
 		  // 1220px 미만에서 사용할 JavaScript
 		  $(window).scroll(function() {
 			  if($(this).scrollTop() > $bannerOST) {
-				  $('#signature1').animate({ opacity : "100%", left: '15%' }, 1000);
-				  $('#signature2').animate({ opacity : "100%", right: '15%' }, 1000);
+				  $('#signature1').animate({ opacity : "100%", left: '15%' }, 1000).css({ display : 'block' });
+				  $('#signature2').animate({ opacity : "100%", right: '15%' }, 1000).css({ display : 'block' });
 			  }
 		  });
 	  }
