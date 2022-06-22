@@ -71,8 +71,7 @@ $(document).ready(function() {
 
 	$dots
 		.on('click', dotSelected)
-		.on('mouseenter', pauseSlider)
-		.on('mouseleave', startSlider);		
+		.on('mouseenter', pauseSlider);
 
 	
 	initSlider();

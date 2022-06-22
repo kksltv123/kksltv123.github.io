@@ -106,13 +106,14 @@ $(document).ready(function() {
     $('#nav_about').click(function() {
         $html.animate({ scrollTop : 1 * $window.height() });
         pageIndex = 1;
+        $('header').removeClass('active');
         gageCharge();
     })
     $('#nav_web').click(function() {
         $html.animate({ scrollTop : 2 * $window.height() });
         pageIndex = 2;
         $('header').addClass('active');
-        $('#web_info_bulk').stop().animate({ opacity : "100%", left: "55%" }, 1000);
+        webMoveEffect()
     })
     $('#nav_design').click(function() {
         $html.animate({ scrollTop : 5 * $window.height() });
