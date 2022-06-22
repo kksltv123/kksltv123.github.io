@@ -106,7 +106,7 @@ $(document).ready(function() {
     $('#nav_about').click(function() {
         $html.animate({ scrollTop : 1 * $window.height() });
         pageIndex = 1;
-        $('header').removeClass('active');
+        $('header').addClass('active');
         gageCharge();
     })
     $('#nav_web').click(function() {
